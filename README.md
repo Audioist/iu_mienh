@@ -9,4 +9,5 @@ BrandBook designed and developed by Enrique Novoa.
 
 ## CSS
 
-This project is using plain CSS.
+* This project is using plain CSS.
+* CSS class names follow BEM nomenclature standards.
