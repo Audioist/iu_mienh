@@ -15,7 +15,7 @@ for-tablet-landscape-up {
  }
 
  for-desktop-up {
-  @media only screen and (min-width: 1200.01px) { //content; }
+  @media only screen and (min-width: 1200.00px) { //content; }
  }
 
  for-big-desktop-up {
