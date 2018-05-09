@@ -3,23 +3,15 @@
 --- MEDIA QUERIES CHEAT SHEET ---
 
 for-phone-only {
-   @media only screen and (min-width: 600px) { //content; }
+   @media only screen and (max-width: 600.00px) { //content; }
  }
 
-for-tablet-portrait-up {
-  @media only screen and (min-width: 600.02px) { //content; }
- }
-
-for-tablet-landscape-up {
- @media only screen and (min-width: 900.01px) { //content; }
+for-tablet-up {
+  @media only screen and (min-width: 600.02px) and (max-width: 1200.01px ) { //content; }
  }
 
  for-desktop-up {
-  @media only screen and (min-width: 1200.00px) { //content; }
+  @media only screen and (min-width: 1200.01px) { //content; }
  }
-
- for-big-desktop-up {
-  @media only screen and (min-width: 1800.01px) { //content; }
- } 
  
  */
