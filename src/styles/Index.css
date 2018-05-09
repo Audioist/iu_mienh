@@ -7,7 +7,7 @@ for-phone-only {
  }
 
 for-tablet-up {
-  @media only screen and (min-width: 600.02px) and (max-width: 1200.01px ) { //content; }
+  @media only screen and (min-width: 600.01px) and (max-width: 1200.00px ) { //content; }
  }
 
  for-desktop-up {
