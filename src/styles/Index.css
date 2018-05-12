@@ -1,5 +1,35 @@
-/* 
+:root {
+  font-size: calc(0.5em + 0.667vw);
+  --header: Arial, sans-serif;
+  --body: sans-serif;
+}
 
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1200.01px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header);
+}
+
+p {
+  font-family: var(--body);
+}
+
+/* 
 --- MEDIA QUERIES CHEAT SHEET ---
 
 for-phone-only {
@@ -13,5 +43,4 @@ for-tablet-up {
  for-desktop-up {
   @media only screen and (min-width: 1200.01px) { //content; }
  }
- 
  */
