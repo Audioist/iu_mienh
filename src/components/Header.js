@@ -8,6 +8,9 @@ import "../styles/Header/Header-Cart.css";
 const Header = () => {
   return (
     <header className="ium-header">
+      <div className="ium-header-hamburger">
+        <i className="fas fa-bars"/>
+      </div>
       <h1 className="ium-header-logo">
         <a href="/">IU Mien</a>
       </h1>
@@ -19,7 +22,9 @@ const Header = () => {
           <li>Contact</li>
         </ul>
       </nav>
-      <div className="ium-header-cart">x</div>
+      <div className="ium-header-cart">
+        <i class="fas fa-shopping-cart" />
+      </div>
     </header>
   );
 };

@@ -1,5 +1,21 @@
 .ium-header-cart {
-  background: lime;
-  padding: 0.5em;
-  cursor: pointer;
+    background: lime;
+    padding: 0.5em;
+    cursor: pointer;
 }
+
+/*
+--- MEDIA QUERIES CHEAT SHEET ---
+
+for-phone-only {
+   @media only screen and (max-width: 600.00px) { //content; }
+ }
+
+for-tablet-up {
+  @media only screen and (min-width: 600.01px) and (max-width: 1200.00px ) { //content; }
+ }
+
+ for-desktop-up {
+  @media only screen and (min-width: 1200.01px) { //content; }
+ }
+ */
