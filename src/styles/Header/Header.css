@@ -1,0 +1,24 @@
+.ium-header {
+  font-size: 1.5rem;
+  background: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+/* 
+--- MEDIA QUERIES CHEAT SHEET ---
+
+for-phone-only {
+   @media only screen and (max-width: 600.00px) { //content; }
+ }
+
+for-tablet-up {
+  @media only screen and (min-width: 600.01px) and (max-width: 1200.00px ) { //content; }
+ }
+
+ for-desktop-up {
+  @media only screen and (min-width: 1200.01px) { //content; }
+ }
+ */

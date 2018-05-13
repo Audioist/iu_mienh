@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600|Vollkorn:600");
+/* FONTS IMPORTED FROM GOOGLE FONTS */
+
 :root {
+  /* APPLY REM + EM FOR MEASUREMENT UNITS */
   font-size: calc(0.5em + 0.667vw);
-  --font-family_header: Arial, sans-serif;
-  --font-family_body: sans-serif;
+  /* DEFINE CSS VARIABLES */
+  --font-family_header: "Vollkorn", serif;
+  --font-family_body: "Source Serif Pro", serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -16,6 +21,20 @@
   }
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html * {
+  font-family: var(--font-family_body);
+}
+
 h1,
 h2,
 h3,
@@ -23,11 +42,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family_header);
-}
-
-html,
-p {
-  font-family: var(--font-family_body);
 }
 
 /* 

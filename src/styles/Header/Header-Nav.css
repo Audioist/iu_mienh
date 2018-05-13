@@ -1,0 +1,16 @@
+.ium-header-nav {
+  background: green;
+  margin-left: auto;
+}
+
+.ium-header-nav > ul {
+  background: tomato;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ium-header-nav > ul > li {
+  background: green;
+  cursor: pointer;
+  padding: 0.5em;
+}
