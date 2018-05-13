@@ -5,7 +5,6 @@ import "../styles/Header/Header-Logo.css";
 import "../styles/Header/Header-Nav.css";
 import "../styles/Header/Header-Cart.css";
 
-
 const Header = () => {
   return (
     <header className="ium-header">
@@ -17,7 +16,7 @@ const Header = () => {
           <li>Home</li>
           <li>About</li>
           <li>Products</li>
-          <li>Contact</li>                            
+          <li>Contact</li>
         </ul>
       </nav>
       <div className="ium-header-cart">x</div>

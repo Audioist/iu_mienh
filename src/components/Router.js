@@ -8,10 +8,10 @@ const Router = () => {
       <div>
         <Switch>
           <Route path="/" component={App} />
-        </Switch>  
+        </Switch>
       </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default Router;
