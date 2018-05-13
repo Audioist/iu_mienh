@@ -1,18 +1,18 @@
 .ium-header {
-    font-size: 1.5rem;
-    background: blue;
-    display: flex;
+  font-size: 1.5rem;
+  background: blue;
+  display: flex;
 }
 
 .ium-header-logo {
-    font-size: 1em;
-    font-family: var(--font-family_header);
-    letter-spacing: -1.5px;
-    background: purple;
+  font-size: 1em;
+  font-family: var(--font-family_header);
+  letter-spacing: -1.5px;
+  background: purple;
 }
 
 .ium-header-logo a {
-    font-size: 4em;
-    display: block;
-    text-decoration: none;
+  font-size: 4em;
+  display: block;
+  text-decoration: none;
 }
