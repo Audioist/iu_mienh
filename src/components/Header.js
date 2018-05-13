@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="ium-header">
       <div className="ium-header-hamburger">
-        <i className="fas fa-bars"/>
+        <i className="fas fa-bars" />
       </div>
       <h1 className="ium-header-logo">
         <a href="/">IU Mien</a>
