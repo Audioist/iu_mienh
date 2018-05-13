@@ -1,7 +1,7 @@
 :root {
   font-size: calc(0.5em + 0.667vw);
-  --header: Arial, sans-serif;
-  --body: sans-serif;
+  --font-family_header: Arial, sans-serif;
+  --font-family_body: sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -22,11 +22,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--header);
+  font-family: var(--font-family_header);
 }
 
+html,
 p {
-  font-family: var(--body);
+  font-family: var(--font-family_body);
 }
 
 /* 

@@ -1,39 +1,18 @@
-.iu-header {
-  font-size: 1.5rem; /**/
-  background: blue;
-  display: flex;
+.ium-header {
+    font-size: 1.5rem;
+    background: blue;
+    display: flex;
 }
 
-.iu-header-logo {
-  font-size: 1em; /**/
-  font-family: var(--header);
-  letter-spacing: -1.5px;
-  background: purple;
+.ium-header-logo {
+    font-size: 1em;
+    font-family: var(--font-family_header);
+    letter-spacing: -1.5px;
+    background: purple;
 }
 
-.iu-header-logo a {
-  font-size: 4em; /**/
-  display: block;
-  text-decoration: none;
+.ium-header-logo a {
+    font-size: 4em;
+    display: block;
+    text-decoration: none;
 }
-
-/* .header {
-  font-size: 1.5rem;
-}
-.footer {
-  font-size: 0.75rem;
-}
-.sidebar {
-  font-size: 0.85rem;
-}
-
-/* Type will scale with modules */
-/* h1 {
-  font-size: 3em;
-}
-h2 {
-  font-size: 2.5em;
-}
-h3 {
-  font-size: 2em;
-} */
