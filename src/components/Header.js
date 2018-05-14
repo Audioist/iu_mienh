@@ -18,9 +18,7 @@ const Header = () => {
         <Link to="/">IU Mien</Link>
       </h1>
       <nav className="ium-header-nav">
-        <ul>
-          {sections.map((item) => <li key={item}>{item}</li>)}
-        </ul>
+        <ul>{sections.map(item => <li key={item}>{item}</li>)}</ul>
       </nav>
       <div className="ium-header-cart">
         <i class="fas fa-shopping-cart" />

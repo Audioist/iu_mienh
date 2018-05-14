@@ -10,6 +10,6 @@ export default class Cta extends Component {
         <p>Lorem ipsum</p>
         <button>PURCHASE NOW!</button>
       </section>
-    )
+    );
   }
 }
