@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import iumLogo from "../img/ium-logo.svg";
+import shoppingCart from "../img/shopping-cart.svg";
 
 import "../styles/Header/Header.css";
 import "../styles/Header/Header-Logo.css";
@@ -14,15 +16,13 @@ const Header = () => {
       <div className="ium-header-hamburger">
         <i className="fas fa-bars" />
       </div>
-      <h1 className="ium-header-logo">
-        <Link to="/">IU Mien</Link>
-      </h1>
+      <Link to="/">
+        <img className="ium-header-logo" src={iumLogo} alt="IU MIEN logo" />
+      </Link>
       <nav className="ium-header-nav">
         <ul>{sections.map(item => <li key={item}>{item}</li>)}</ul>
       </nav>
-      <div className="ium-header-cart">
-        <i class="fas fa-shopping-cart" />
-      </div>
+      <img className="ium-header-cart" src={shoppingCart} alt="Shopping Cart" />
     </header>
   );
 };
