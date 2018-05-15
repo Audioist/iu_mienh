@@ -38,13 +38,11 @@ class Header extends Component {
     let push = section.toLowerCase();
     push === "home"
       ? (push = "")
-      : document
-          .getElementById(push)
-          .scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-            inline: "nearest"
-          });
+      : document.getElementById(push).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
   }
 }
 
