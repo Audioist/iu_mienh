@@ -1,0 +1,24 @@
+/* Need to change this. This page is just a mockup */
+
+.ium-cta,
+.ium-about,
+.ium-contact,
+.ium-products {
+  min-height: 500px;
+}
+
+.ium-cta {
+  background: cadetblue;
+}
+
+.ium-about {
+  background: green;
+}
+
+.ium-contact {
+  background: lime;
+}
+
+.ium-products {
+  background: tomato;
+}
