@@ -10,7 +10,7 @@ class Router extends Component {
         <div>
           <Route path="/" render={props => <Header {...props} />} />
           <Switch>
-            <Route path="/about" render={(props) => <App {...props} />} />
+            <Route path="/about" render={props => <App {...props} />} />
             <Route path="/products" render={props => <App {...props} />} />
             <Route path="/contact" render={props => <App {...props} />} />
             <Route path="/" render={props => <App {...props} />} />
