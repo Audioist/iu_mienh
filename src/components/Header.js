@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import iumLogo from "../img/ium-logo.svg";
+import shoppingCart from "../img/shopping-cart.svg";
 
 import "../styles/Header/Header.css";
 import "../styles/Header/Header-Logo.css";
@@ -9,7 +11,6 @@ import "../styles/Header/Header-Cart.css";
 class Header extends Component {
   render() {
     const sections = ["Home", "About", "Products", "Contact"];
-
     return (
       <header className="ium-header">
         <div className="ium-header-hamburger">

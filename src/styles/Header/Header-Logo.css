@@ -1,12 +1,12 @@
 .ium-header-logo {
   font-size: 1em;
   letter-spacing: -1.5px;
-  background: purple;
+  width: 100px;
+  margin: 8px 0 5px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
 }
 
-.ium-header-logo a {
-  font-size: 4em;
-  font-family: var(--font-family_header);
-  display: block;
-  text-decoration: none;
+.ium-header-logo:hover {
+  transform: scale(1.05);
 }
