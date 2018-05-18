@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import iumLogo from "../img/ium-logo.svg";
-import shoppingCart from "../img/shopping-cart.svg";
+import ShoppingCart from "./icons/Shopping-Cart.js";
+import IUMLogo from "../img/ium-logo.svg";
 
 import "../styles/Header/Header.css";
 import "../styles/Header/Header-Logo.css";
@@ -16,9 +16,9 @@ class Header extends Component {
         <div className="ium-header-hamburger">
           <i className="fas fa-bars" />
         </div>
-        <h1 className="ium-header-logo">
-          <Link to="/">IU Mien</Link>
-        </h1>
+        <Link to="/">
+          <img src={IUMLogo} className="ium-header-logo" />
+        </Link>
         <nav className="ium-header-nav">
           <ul>
             {sections.map(item => (
@@ -29,7 +29,7 @@ class Header extends Component {
           </ul>
         </nav>
         <div className="ium-header-cart">
-          <i className="fas fa-shopping-cart" />
+          <ShoppingCart />
         </div>
       </header>
     );
