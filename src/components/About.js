@@ -3,7 +3,11 @@ import React from "react";
 const About = props => {
   return (
     <section id="about" className="ium-about">
-      <p>About</p>
+      <h2>About</h2>
+      <div>
+        <img />
+        <p>whateva whateva whateva</p>
+      </div>
     </section>
   );
 };

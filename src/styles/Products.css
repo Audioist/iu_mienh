@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+.container {
+  background: blue;
+  padding: 0.7em;
+  max-width: 55em;
+  margin: 0 auto;
+  height: 34em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  background-color: orange;
+  height: 17em;
+  width: 25em;
+  margin: 1%;
+  padding: 1em;
+}
+
+.item:nth-child(2) {
+  background-color: pink;
+  height: 13em;
+}
+
+.item:nth-child(3) {
+  height: 13em;
+}
+
+.item:nth-child(4) {
+  background-color: aqua;
+  height: 17em;
+}

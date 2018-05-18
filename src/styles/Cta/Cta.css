@@ -1,12 +1,5 @@
 /* Need to change this. This page is just a mockup */
 
-.ium-cta,
-.ium-about,
-.ium-contact,
-.ium-products {
-  min-height: 500px;
-}
-
 .ium-cta {
   /* background: url(../../img/shopping-cart.svg) no-repeat 0 0; ; */
   background: lightblue;
