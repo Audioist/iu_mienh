@@ -4,7 +4,7 @@ const Contact = props => {
   return (
     <section id="contact" className="ium-contact">
       <form action="/my-handling-form-page">
-        <h2>Contact</h2> 
+        <h2>Contact</h2>
         <div>
           <div>
             <label for="name">Name:</label>
@@ -20,7 +20,7 @@ const Contact = props => {
           </div>
           <div>
             <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
+            <textarea id="msg" name="user_message" />
           </div>
           <button>Send</button>
         </div>

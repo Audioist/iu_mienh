@@ -12,13 +12,11 @@ export default class Cta extends Component {
           <button>PURCHASE NOW!</button>
         </div>
         <div>
-          <img alt="Welcome image"/>
+          <img alt="Welcome image" />
           <h3>Hi there!</h3>
           <p>Lorem ipsum dolor emet</p>
         </div>
-        <div>
-          Product
-        </div>
+        <div>Product</div>
       </section>
     );
   }
