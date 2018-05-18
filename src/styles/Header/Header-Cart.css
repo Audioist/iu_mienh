@@ -3,15 +3,11 @@
   cursor: pointer;
   width: 30px;
   height: auto;
-}
-
-.ium-header-cart-svg {
-  fill: #e9f3e1;
   transition: all 0.3s ease-in-out;
 }
 
-.ium-header-cart:hover .ium-header-cart-svg {
-  fill: #f2b347;
+.ium-header-cart:hover {
+  transform: scale(1.1);
 }
 
 /*
