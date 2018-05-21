@@ -9,6 +9,15 @@ import "../styles/Header/Header-Nav.css";
 import "../styles/Header/Header-Cart.css";
 
 class Header extends Component {
+
+  componentDidMount(){
+    let url = window.location.href;
+    let arr = url.split("/");
+    let request = arr[arr.length-1];
+    console.log("Need to update Header/ComponentDidMount")
+    if(request !== "") { this.scrollDown(request) };
+  }
+
   render() {
     const sections = ["Home", "About", "Products", "Contact"];
     return (
