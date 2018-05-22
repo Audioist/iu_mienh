@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "../img/ShoppingCartIcon";
 import IumLogo from "../img/ium-logo.svg";
-import HamburguerIcon from "../img/peace-love.svg";
+import HamburguerIcon from "../img/HamburgerIcon";
 
 import "../styles/Header/Header.css";
 import "../styles/Header/Header-Logo.css";
@@ -15,48 +15,45 @@ class Header extends Component {
     let arr = url.split("/");
     let request = arr[arr.length - 1];
     console.log("Need to update Header/ComponentDidMount");
-    if (request !== "" || request !== "cart") {
+    if (request !== "") {
       this.scrollDown.bind(this, request);
     }
   }
 
   render() {
     const sections = ["Home", "About", "Products", "Contact"];
+    
     return (
       <header className="ium-header">
-        <img
-          className="ium-header-hamburger"
-          src={HamburguerIcon}
-          alt="IU Mien menu"
-        />
+        <HamburguerIcon className="ium-header-hamburger" />
         <h1 className="ium-header-logo">
-          <Link to="/">
+          <Link to="/" onClick={this.scrollDown.bind(this, "home")}>
             <img src={IumLogo} alt="IU Mien logo" />
           </Link>
         </h1>
         <nav className="ium-header-nav">
           <ul>
             {sections.map(item => (
-              <li key={item} onClick={this.scrollDown.bind(this, item)}>
-                {item}
-              </li>
+              <Link key={item} to="/" onClick={this.scrollDown.bind(this, item)}>
+                <li>{item}</li>
+              </Link>
             ))}
           </ul>
         </nav>
-        <ShoppingCartIcon />
+        <ShoppingCartIcon className="ium-header-cart"/>
       </header>
     );
   }
 
-  scrollDown(section) {
+  scrollDown(section, history) {
     let push = section.toLowerCase();
-    push === "home"
-      ? (push = "")
-      : document.getElementById(push).scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest"
-        });
+    if(push === "home") { push = "top" }
+
+    document.getElementById(push).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });      
   }
 }
 

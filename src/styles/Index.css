@@ -5,8 +5,11 @@
   /* APPLY REM + EM FOR MEASUREMENT UNITS */
   font-size: calc(0.5em + 0.667vw);
   /* DEFINE CSS VARIABLES */
+  /* FONT FAMILIES */
   --font-family_header: "Vollkorn", serif;
   --font-family_body: "Source Serif Pro", serif;
+  /* COLORS */
+  --color_site-bg: #fff;
 }
 
 @media only screen and (max-width: 600px) {

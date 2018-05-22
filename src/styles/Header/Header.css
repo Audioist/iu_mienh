@@ -1,9 +1,18 @@
 .ium-header {
   font-size: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  position: fixed;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 4em;
+  padding: 0 2em;
+  background: var(--color_site-bg);
+  width: 100%;
+}
+
+@media only screen and (min-width: 600.01px) {
+  .ium-header {
+    padding: 0 4em;
+  }
 }
 
 /*

@@ -9,7 +9,12 @@
   justify-content: space-around;
 }
 
-.ium-header-nav > ul > li {
+.ium-header-nav > ul > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ium-header-nav > ul > a > li {
   position: relative;
   cursor: pointer;
   padding: 0.2em 0;
@@ -17,15 +22,15 @@
   margin: 0 1em;
 }
 
-.ium-header-nav > ul > li:before,
-.ium-header-nav > ul > li:after {
+.ium-header-nav > ul > a > li:before,
+.ium-header-nav > ul > a > li:after {
   content: "";
   position: absolute;
   transition: all 250ms ease-in-out;
   pointer-events: none;
 }
 
-.ium-header-nav > ul > li:after {
+.ium-header-nav > ul > a > li:after {
   width: 100%;
   height: 2px;
   background: #f2b347;
@@ -34,15 +39,18 @@
   transform: scale(0);
 }
 
-.ium-header-nav > ul > li:hover:after {
+.ium-header-nav > ul > a > li:hover:after {
   transform: scale(1.1);
 }
+
+/* HAMBURGER ICON */
 
 .ium-header-hamburger {
   display: inline-block;
   padding: 0.5em;
+  width: 2em;
+  height: 2em;
   cursor: pointer;
-  color: #e9f3e1;
 }
 
 @media only screen and (min-width: 600.01px) {
