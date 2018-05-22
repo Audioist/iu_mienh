@@ -1,13 +1,18 @@
 .ium-header-cart {
-  margin-left: 1em;
+  margin-left: 0.4em;
   cursor: pointer;
-  width: 30px;
+  width: 1.2em;
   height: auto;
   transition: all 0.3s ease-in-out;
+  fill: currentColor;
 }
 
 .ium-header-cart:hover {
   transform: scale(1.1);
+}
+
+.ium-header-cart path {
+  stroke-width: 10;
 }
 
 /*

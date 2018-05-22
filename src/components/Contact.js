@@ -7,19 +7,19 @@ const Contact = props => {
         <h2>Contact</h2>
         <div>
           <div>
-            <label for="name">Name:</label>
+            <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="user_name" />
             <div>
-              <label for="mail">E-mail:</label>
+              <label htmlFor="mail">E-mail:</label>
               <input type="email" id="mail" name="user_email" />
             </div>
             <div>
-              <label for="mail">Subject:</label>
+              <label htmlFor="mail">Subject:</label>
               <input type="email" id="mail" name="user_email" />
             </div>
           </div>
           <div>
-            <label for="msg">Message:</label>
+            <label htmlFor="msg">Message:</label>
             <textarea id="msg" name="user_message" />
           </div>
           <button>Send</button>

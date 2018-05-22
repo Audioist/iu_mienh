@@ -1,5 +1,4 @@
 .ium-header-nav {
-  color: #e9f3e1;
   display: none;
   margin-left: auto;
   font-size: 1.2rem;
@@ -16,10 +15,6 @@
   padding: 0.2em 0;
   transition: all 0.3s ease-in-out;
   margin: 0 1em;
-}
-
-.ium-header-nav > ul > li:hover {
-  /* color: #F2B347; */
 }
 
 .ium-header-nav > ul > li:before,
@@ -44,12 +39,13 @@
 }
 
 .ium-header-hamburger {
+  display: inline-block;
   padding: 0.5em;
   cursor: pointer;
   color: #e9f3e1;
 }
 
-@media only screen and (min-width: 600.00001px) {
+@media only screen and (min-width: 600.01px) {
   .ium-header-hamburger {
     display: none;
   }

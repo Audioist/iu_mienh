@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import iumLogo from "../img/ium-logo.svg";
-import shoppingCart from "../img/shopping-cart.svg";
+import ShoppingCartIcon from "../img/ShoppingCartIcon";
+import IumLogo from "../img/ium-logo.svg";
+import HamburguerIcon from "../img/peace-love.svg";
 
 import "../styles/Header/Header.css";
 import "../styles/Header/Header-Logo.css";
@@ -14,8 +15,8 @@ class Header extends Component {
     let arr = url.split("/");
     let request = arr[arr.length - 1];
     console.log("Need to update Header/ComponentDidMount");
-    if (request !== "") {
-      this.scrollDown(request);
+    if (request !== "" || request !== "cart") {
+      this.scrollDown.bind(this, request);
     }
   }
 
@@ -23,11 +24,15 @@ class Header extends Component {
     const sections = ["Home", "About", "Products", "Contact"];
     return (
       <header className="ium-header">
-        <div className="ium-header-hamburger">
-          <i className="fas fa-bars" />
-        </div>
+        <img
+          className="ium-header-hamburger"
+          src={HamburguerIcon}
+          alt="IU Mien menu"
+        />
         <h1 className="ium-header-logo">
-          <Link to="/">IU Mien</Link>
+          <Link to="/">
+            <img src={IumLogo} alt="IU Mien logo" />
+          </Link>
         </h1>
         <nav className="ium-header-nav">
           <ul>
@@ -38,9 +43,7 @@ class Header extends Component {
             ))}
           </ul>
         </nav>
-        <div className="ium-header-cart">
-          <i className="fas fa-shopping-cart" />
-        </div>
+        <ShoppingCartIcon />
       </header>
     );
   }
