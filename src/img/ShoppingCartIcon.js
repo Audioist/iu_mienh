@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class ShoppingCart extends Component {
   render() {
     const { className = "no-class" } = this.props;
-    
+
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"

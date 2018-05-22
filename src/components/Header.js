@@ -22,7 +22,7 @@ class Header extends Component {
 
   render() {
     const sections = ["Home", "About", "Products", "Contact"];
-    
+
     return (
       <header className="ium-header">
         <HamburguerIcon className="ium-header-hamburger" />
@@ -34,26 +34,32 @@ class Header extends Component {
         <nav className="ium-header-nav">
           <ul>
             {sections.map(item => (
-              <Link key={item} to="/" onClick={this.scrollDown.bind(this, item)}>
+              <Link
+                key={item}
+                to="/"
+                onClick={this.scrollDown.bind(this, item)}
+              >
                 <li>{item}</li>
               </Link>
             ))}
           </ul>
         </nav>
-        <ShoppingCartIcon className="ium-header-cart"/>
+        <ShoppingCartIcon className="ium-header-cart" />
       </header>
     );
   }
 
   scrollDown(section, history) {
     let push = section.toLowerCase();
-    if(push === "home") { push = "top" }
+    if (push === "home") {
+      push = "top";
+    }
 
     document.getElementById(push).scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest"
-    });      
+    });
   }
 }
 
