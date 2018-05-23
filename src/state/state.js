@@ -1,5 +1,9 @@
 import { combineReducers } from "redux";
 
-const state = combineReducers({});
+import cart from "./cart/reducer";
+
+const state = combineReducers({
+  cart
+});
 
 export default state;
