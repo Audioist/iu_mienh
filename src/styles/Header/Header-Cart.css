@@ -4,15 +4,19 @@
   width: 1.2em;
   height: auto;
   transition: all 0.3s ease-in-out;
-  fill: currentColor;
+  fill: black;
 }
 
 .ium-header-cart:hover {
   transform: scale(1.1);
 }
 
-.ium-header-cart path {
-  stroke-width: 10;
+@media only screen and (min-width: 600.01px) {
+  .ium-header-cart {
+    font-size: 1.5em;
+    max-width: 25px;
+    min-width: 25px;
+  }
 }
 
 /*

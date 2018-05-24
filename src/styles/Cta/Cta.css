@@ -2,16 +2,20 @@
 
 .ium-cta {
   background: cadetblue;
+  height: 1000px;
 }
 
 .ium-about {
   background: green;
+  height: 1000px;
 }
 
 .ium-contact {
   background: lime;
+  height: 1000px;
 }
 
 .ium-products {
   background: tomato;
+  height: 1000px;
 }

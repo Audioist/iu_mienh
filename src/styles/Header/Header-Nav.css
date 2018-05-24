@@ -1,7 +1,7 @@
 .ium-header-nav {
   display: none;
   margin-left: auto;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .ium-header-nav > ul {
@@ -33,7 +33,7 @@
 .ium-header-nav > ul > a > li:after {
   width: 100%;
   height: 2px;
-  background: #f2b347;
+  background: var(--color_secondary);
   left: 0;
   bottom: -5px;
   transform: scale(0);
@@ -41,6 +41,12 @@
 
 .ium-header-nav > ul > a > li:hover:after {
   transform: scale(1.1);
+}
+
+@media only screen and (min-width: 600.01px) and (max-width: 1200px) {
+  .ium-header-nav > ul > a > li {
+    font-size: 1.1em;
+  }
 }
 
 /* HAMBURGER ICON */
