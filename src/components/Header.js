@@ -10,8 +10,6 @@ import "../styles/Header/Header-Nav.css";
 import "../styles/Header/Header-Cart.css";
 
 class Header extends Component {
-
-
   render() {
     const sections = ["Home", "About", "Products", "Contact"];
 
@@ -19,9 +17,7 @@ class Header extends Component {
       <header className="ium-header">
         <HamburguerIcon className="ium-header-hamburger" />
         <h1 className="ium-header-logo">
-          <NavLink to="/" 
-            isActive={this.scrollDown.bind(this, "home")}
-          >
+          <NavLink to="/" isActive={this.scrollDown.bind(this, "home")}>
             <img src={IumLogo} alt="IU Mien logo" />
           </NavLink>
         </h1>
@@ -47,18 +43,17 @@ class Header extends Component {
 
   scrollDown(section) {
     let push = section.toLowerCase();
-    if (push === "home") { push = "top";}
+    if (push === "home") {
+      push = "top";
+    }
     let behaviour = {
       behavior: "smooth",
       block: "start",
       inline: "nearest"
-    }
+    };
     let loc = document.getElementById(push);
     loc.scrollIntoView(behaviour);
   }
-
 }
-
-
 
 export default Header;
