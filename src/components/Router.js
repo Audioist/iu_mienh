@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./App";
-import Header from "./Header";
+import Header from "../containers/Header";
 import Cart from "./Cart";
 
 class Router extends Component {

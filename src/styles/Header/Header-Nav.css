@@ -1,7 +1,24 @@
 .ium-header-nav {
-  display: none;
   margin-left: auto;
   font-size: 1.3rem;
+  display: none;
+}
+
+.ium-header-nav_off,
+.ium-header-nav_on {
+  position: absolute;
+  z-index: 9999;
+  bottom: -500px;
+  height: 100%;
+  background: white;
+}
+
+.ium-header-nav_off {
+  display: none;
+}
+
+.ium-header-nav_on {
+  display: block;
 }
 
 .ium-header-nav > ul {
@@ -63,6 +80,7 @@
   .ium-header-hamburger {
     display: none;
   }
+
   .ium-header-nav {
     cursor: pointer;
     display: block;
